@@ -1,0 +1,679 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background: black;
+    /* border: 2px solid green; */
+}
+
+.background, #detail {
+    background-size: 100% 100%;
+    width: 700px;
+    height: 500px;
+    
+    border-radius: 50px;
+    box-shadow: 0 0 8px 8px black inset;
+}
+
+.background {
+    background-image: url("../image/solve_bg.png");
+    position: relative;
+    left: 20%;
+    top: 10%;
+}
+
+
+#detail {
+    background-image: url("../image/bg_detail.png");
+    position: relative;
+    left: 20%;
+    bottom: 120%;
+    /* border: 2px solid yellow; */
+    visibility: hidden;
+}
+
+#title {
+    width: 30%;
+    font-family: 'Averia Sans Libre', cursive;
+    color:white;
+    font-size: 50px;
+    font-weight: lighter;
+    position: relative;
+    left: 35%;
+    top: 5%;
+    /* border: 2px solid yellow; */
+}
+
+#notification {
+    position: relative;
+    bottom: 215%;
+    visibility: hidden;
+}
+
+#note_letter {
+    position: relative;
+    left: 25%;
+}
+
+
+#big_frame {
+    /* border: 2px solid red; */
+    height: 480px;
+    position: relative;
+    bottom: 117%;
+    visibility: hidden;
+}
+
+#frame_big {
+    width: 65%;
+    position: relative;
+    bottom: 17%;
+    left: 18%;
+}
+
+#bottom_big {
+    width: 45%;
+    position: relative;
+    bottom: 105%;
+    left: 28.5%;
+    
+}
+
+#left_big {
+    width: 32.3%;
+    position: relative;
+    bottom: 157.2%;
+    right: 20%;
+ 
+}
+
+#right_big {
+    width: 32.3%;
+    position: relative;
+    bottom: 205.3%;
+    left: 45.8%;
+    
+}
+
+#back_frame {
+    position: relative;
+    bottom: 210%;
+    right: 30%;
+}
+
+.not_shown {
+    visibility: hidden;
+}
+
+
+#frame {
+    width: 10%;
+    position: relative;
+    right: 65%;
+    bottom: 18%;
+}
+
+#here {
+    width: 15%;
+    position: relative;
+    left: 50%;
+    bottom: 10%;
+}
+
+#desk {
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 40%;
+}
+
+#board {
+    width:25%;
+    position: relative;
+    bottom: 20%;
+}
+
+#clock {
+    width: 15%;
+    position: relative;
+    left: 15%;
+    bottom: 45%;
+}
+
+#bowl {
+    width: 10%;
+    position: relative;
+    left: 67%;
+    top: 22%;
+    z-index:2;
+}
+
+#dog {
+    width: 15%;
+    position: relative;
+    right: 20%;
+    top: 20%;
+    z-index:2;
+}
+
+#big_clock, #big_board {
+    height: 300px;
+    position: relative;
+    bottom: 50%;
+    visibility: hidden;
+}
+
+#back_board {
+    position: relative;
+    right: 65%;
+    top: 50%;
+}
+
+#board_big {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    top: 105%;
+}
+
+#clock_big {
+    width: 40%;
+    position: relative;
+    left: 30%;
+    z-index: 1;
+}
+
+#pin {
+    position: relative;
+    right: 10%;
+    z-index: 2;
+    width: 40%;
+    transform: rotate(0deg);
+
+}
+
+#back_clock {
+    position: relative;
+    right: 75%;
+    bottom: 30%;
+}
+
+#dog_bowl_fill {
+    width: 10%;
+    position: relative;
+    left: 37.5%;
+    top: 22.5%;
+    visibility: hidden;
+}
+
+#bowl_empty {
+    width: 17%;
+    height: 15%;
+    position: relative;
+    left: 22%;
+    top: 21%;
+}
+
+#scroll_dog {
+    width: 10%;
+    position: relative;
+    right: 75.5%;
+    top: 17%;
+    z-index: 1;
+}
+
+#small_bottom {
+    width: 6.7%;
+    position: relative;
+    bottom: 43%;
+    left: 10%;
+    visibility: hidden;
+}
+
+#small_left {
+    width: 5.5%;
+    position: relative;
+    bottom: 50%;
+    left: 2.1%;
+    visibility: hidden;
+}
+
+#small_right {
+    width: 5.1%;
+    position: relative;
+    bottom: 50.6%;
+    right: 0.9%;
+    visibility: hidden;
+}
+
+#thirsty {
+    /* border: 2px red solid; */
+    width: 10%;
+    position: relative;
+    right: 10%;
+    bottom: 22%;
+    visibility: hidden;
+}
+
+#forward {
+    position: relative;
+    left: 53%;
+    bottom: 22%;
+    transform: rotate(180deg);
+}
+
+#background2, #puzzle, #second_room {
+    position: relative;
+    display: none;
+}
+
+#desk2 {
+    height: 70%;
+    position: relative;
+    left: 8%;
+    top: 20%;
+    z-index: 1;
+}
+
+
+#drawer4 {
+    width: 17%;
+    z-index: 2;
+    position: relative;
+    right: 73.5%;
+    top: 5%;
+}
+
+#drawer1 {
+    width: 40%;
+    z-index: 7;
+    position: relative;
+    left: 17.1%;
+    bottom: 26.7%;
+}
+
+#drawer2 {
+    width: 26.6%;
+    z-index: 7;
+    position: relative;
+    left: 8.1%;
+    bottom: 26%;
+}
+
+#drawer3 {
+    width: 26.6%;
+    z-index: 2;
+    position: relative;
+    right: 19%;
+    bottom: 11.5%;
+}
+
+#empty4 {
+    width: 11%;
+    height: 30%;
+    position: relative;
+    left: 13.5%;
+    bottom: 52%;
+    z-index: 5;
+}
+
+#empty1 {
+    width: 30%;
+    height: 10%;
+    position: relative;
+    left: 14%;
+    bottom: 70%;
+    z-index: 5;
+}
+
+#empty2 {
+    width: 16%;
+    height: 10%;
+    position: relative;
+    bottom: 70%;
+    left: 16%;
+    z-index: 5;
+}
+
+#empty3 {
+    width: 16%;
+    height: 10%;
+    position: relative;
+    bottom: 55.5%;
+    right: 1.5%;
+    z-index:5;
+}
+
+#empty {
+    width: 15%;
+    position: relative;
+    right: 35%;
+    bottom: 78%;
+    z-index: 6;
+}
+
+#env {
+    width: 13%;
+    position: relative;
+    right: 32%;
+    bottom: 98.1%;
+    z-index: 9;
+}
+
+#scroll {
+    width: 13%;
+    position: relative;
+    right: 20%;
+    bottom: 92.2%;
+    z-index: 8;
+}
+
+#letter_small {
+    width: 26%;
+    position: relative;
+    bottom: 109%;
+    left: 33%;
+    z-index: 10;
+}
+
+#calender {
+    width: 20%;
+    position: relative;
+    left: 37%;
+    bottom: 115%;
+    z-index: 10;
+}
+
+#calender_detail {
+    width: 60%;
+    position: relative;
+    bottom: 145%;
+    left: 20%;
+    z-index: 10;
+    visibility: hidden;
+}
+
+#letter_detail {
+    position: relative;
+    bottom: 210%;
+    left: 30%;
+    z-index: 10;
+    visibility: hidden;
+}
+
+#back {
+    position: relative;
+    bottom: 255%;
+    right: 40%;
+    z-index: 10;
+}
+
+#puzzle p {
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 35px;
+    position: relative;
+    left: 10%;
+    top: 7%;
+}
+
+.glass {
+    width: 30%;
+    position: relative;
+    left: 5%;
+    top: 59px;
+    /* border: 2px yellow solid; */
+}
+
+#score1, #score2, #score3 {
+    width:20%;
+    position: relative;
+    left: 10%;
+}
+
+#score2 {
+    position: relative;
+    left: 20%;
+}
+
+#score3 {
+    position: relative;
+    left: 30%;
+}
+
+#key {
+    height: 15%;
+    position: relative;
+    top: 35px;
+    right: 110px;
+}
+
+#back2 {
+    position: relative;
+    right: 80%;
+    bottom: 180px;
+}
+
+#box {
+    /* border: 2px yellow solid; */
+    width: 120px;
+    height: 500px;
+    position: relative;
+    left: 73%;
+    bottom: 55%;
+    display: block;
+}
+
+.boxex {
+    display: block;
+    /* border: 2px green solid; */
+    height: 80px;
+    width: 80px;
+    margin: 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px black inset;
+    
+}
+
+#door {
+    width: 23%;
+    position: relative;
+    left: 8%;
+    top: 10%;
+}
+
+#open_door {
+    width: 23%;
+    position: relative;
+    bottom: 241.8%;
+    right: 3%;
+    visibility: hidden;
+}
+
+#window {
+    width: 45%;
+    position: relative;
+    left: 18%;
+    bottom: 25%;
+}
+
+#wash {
+    width:35%;
+    position: relative;
+    left: 47%;
+    bottom: 20%;
+}
+
+#lock {
+    font-size: 20px;
+    width: 5%;
+    position: relative;
+    left: 27%;
+    bottom: 30%;
+    font-family: 'Averia Sans Libre', cursive;
+    z-index: 2;
+}
+
+.hidden, .drawers, .item {
+    visibility: hidden;
+}
+
+#empty_1, #empty_2 {
+    width: 14%;
+    position: relative;
+    left: 14%;
+    bottom: 23%;
+    z-index: 3;
+}
+
+#empty_3 {
+    width: 14%;
+    height: 5%;
+    z-index: 3;
+    position: relative;
+    bottom: 190%;
+    right: 13%;
+}
+
+#empty_4 {
+    width: 2%;
+    z-index: 3;
+    position: relative;
+    bottom: 266%;
+    left: 65.5%;
+    /* border: 2px red solid; */
+}
+
+#bowl_water {
+    width: 10%;
+    position: relative;
+    bottom: 186.5%;
+    right: 26%;
+    visibility: hidden;
+    z-index: 3;
+}
+
+#left_board, #right_board {
+    width: 35%;
+    z-index:2;
+}
+
+#left_board {
+    position: relative;
+    right: 25%;
+    bottom: 11.5%;
+}
+
+#right_board {
+    position: relative;
+    left: 56%;
+    bottom: 56.7%;
+}
+
+#bird_food {
+    width:10%;
+    position: relative;
+    left: 18%;
+    bottom: 70%;
+    z-index:3;
+}
+
+#note {
+    width: 6%;
+    position: relative;
+    left: 20%;
+    bottom: 70%;
+    z-index:3;
+}
+
+#bird {
+    width: 10%;
+    position: relative;
+    bottom: 116%;
+    left: 7%;
+    visibility: hidden;
+}
+
+#scroll_bird {
+    width: 8%;
+    position: relative;
+    bottom: 278%;
+    left: 52%;
+    visibility: hidden;
+}
+
+#note_big {
+    width: 65%;
+    position: relative;
+    bottom: 150%;
+    left: 15%;
+    z-index: 4;
+    visibility: hidden;
+}
+
+#back3{
+    position: relative;
+    bottom: 200%;
+    right: 63%;
+}
+
+#water {
+    width: 4%;
+    height: 8%;
+    position: relative;
+    bottom: 192%;
+    right: 34.2%;
+}
+
+#scores {
+    /* border: 2px red solid; */
+    width: 400px;
+    height: 500px;
+    position: relative;
+    bottom: 180%;
+    left: 30%;
+    visibility: hidden;
+    z-index:20;
+}
+
+#score_complete {
+    width: 80%;
+    position: relative;
+    top: 5%;
+    left: 10%;
+    visibility: hidden;
+    z-index:20;
+}
+
+#bottom{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    bottom: 75%;
+    visibility: hidden;
+    z-index:20;
+}
+
+#left {
+    width: 80%;
+    position: relative;
+    left: 12%;
+    bottom: 135%;
+    visibility: hidden;
+    z-index:20;
+}
+
+#right {
+    width: 80%;
+    position: relative;
+    bottom: 205%;
+    left: 7%;
+    z-index: 20;
+}
+
+.not_running {
+    visibility: hidden;
+}
+
+
+
+

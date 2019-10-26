@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Room detecting</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre&display=swap" rel="stylesheet">
+        <script src="js/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <h1 id=title>Music of War</h1>
+        <div id="background1" class = "background">
+            <img onclick="change_view('background1','background2')" src="image/desk.png" id="desk">
+            <img onclick="show_big('big_board', 'background1')" src="image/memo_board_sample.png" id="board">
+            <img onclick="show_big('big_clock', 'background1')" src="image/clock.png" id="clock">
+            <img onclick="pick('bowl','bowl_box','image/dog_bowl.png', 'bowl()')" src="image/dog_bowl.png" id="bowl">
+            <img onclick="dog()" src="image/dog.png" id="dog" class="thirsty">
+            <img onclick="change_view('background1','second_room')" src="image/back.png" id="forward">
+            <img src="image/dog_bowl_fill.png" id="dog_bowl_fill">
+            <img onclick="place_bowl()" src="image/emptyImage.png" id="bowl_empty">
+            <img onclick="show_big('big_frame', 'background1')" src="image/frame.png" id="frame">
+            <img onclick="pick('scroll_dog', 'right_box', 'image/right_score.png', 'score_right()')" src="image/right_score.png" id="scroll_dog">
+            <img onclick="show_big('big_frame', 'background1')" id="small_bottom" src="image/score_scroll.png">
+            <img onclick="show_big('big_frame', 'background1')" id="small_left" src="image/left_score.png">
+            <img onclick="show_big('big_frame', 'background1')" id="small_right" src="image/right_score.png">
+            <img id="thirsty" src="image/thirsty.png">
+            <img id="here" src="image/drink_here.png">
+        </div>
+
+        <div id="background2" class = "background">
+            <img src="image/desk_c.png" id="desk2"/>
+
+            <img onclick="drawers('drawer4', 'empty')" src="image/drawer4.png" id="drawer4" class="drawers">
+            <img onclick="drawers('drawer1', 'env')" src="image/drawer1.png" id="drawer1" class="drawers">
+            <img onclick="drawers('drawer2', 'scroll')" src="image/drawer23.png" id="drawer2" class="drawers">
+            <img onclick="drawers('drawer3', 'none')" src="image/drawer23.png" id="drawer3" class="drawers">
+
+            <img onclick="drawers('drawer4', 'empty')" src="image/emptyImage.png" id="empty4" class="empty">
+            <img onclick="drawers('drawer1', 'env')" src="image/emptyImage.png" id="empty1" class="empty">
+            <img onclick="drawers('drawer2', 'scroll')" src="image/emptyImage.png" id="empty2" class="empty">
+            <img onclick="drawers('drawer3', 'none')" src="image/emptyImage.png" id="empty3" class="empty">
+
+            <img onclick="show_detail('letter_detail')" src="image/letter_small.png" id="letter_small">
+            <img onclick="show_detail('calender_detail')" src="image/calender.png" id="calender">
+
+            <img onclick="change_view('background2','puzzle')" src="image/empty.png" id="empty" class="item">
+            <img src="image/envelope_half.png" id="env" class="item">
+            <img onclick="pick('scroll', 'scroll_box', 'image/score_scroll.png', 'score_bottom()')" src="image/scroll_paper_half.png" id="scroll" class="item">
+
+            <img onclick="hide_detail('calender_detail')" src="image/calender_detail.png" id="calender_detail">
+            <img onclick="hide_detail('letter_detail')" src="image/letter_detail.png" id="letter_detail"> 
+
+            <img onclick="change_view('background2','background1')" id="back" src="image/back.png">
+        </div>
+
+        <div id="puzzle" class="background">
+            <p>Forward!your watchword, Queensland</p>
+            <img onclick="display('score1')" id=glass0 class=glass src="image/empty.png">
+            <img onclick="display('score2')" id=glass1 class=glass src="image/glass1.png">
+            <img onclick="display('score3')" id=glass2 class=glass src="image/glass2.png">
+
+            <img class=hidden id=score1 src="image/displayEmpty.png">
+            <img class=hidden id=score2 src="image/display1.png">
+            <img class=hidden id=score3 src="image/display2.png">
+
+            <img onclick="pick('key', 'key_box', 'image/key.png', 'key()')" id=key class="hidden" src="image/key.png">
+
+            <img onclick="change_view('puzzle','background2')" id="back2" src="image/back.png">
+        </div>
+
+        <div id="second_room" class="background">
+            <img onclick="open_door()" id="door" src="image/door.png">
+            <img id="window" src="image/window.png">
+            <img id="wash" src="image/wradrobe_close.png">
+            <img onclick="drawers('left_board','bird_food')" id="empty_1" src="image/emptyImage.png">
+            <img onclick="drawers('right_board','note')" id="empty_2" src="image/emptyImage.png">
+            <img onclick="drawers('left_board','bird_food')" id="left_board" class="drawers" src="image/wradrobe_left.png">
+            <img onclick="drawers('right_board','note')" id="right_board" class="drawers" src="image/wradrobe_right.png"> 
+            <img onclick="pick('bird_food', 'food_box', 'image/bird_food.png', 'food()')" id="bird_food" class="item" src="image/bird_food.png">
+            <img onclick="show_detail('note_big')" id="note" class="item" src="image/note.png">
+            <img onclick="feed()" id="bird" src="image/bird_stand.png">
+            <img onclick="hide_detail('note_big')" id="note_big" src="image/note_big.png">
+            <img onclick="change_view('second_room','background1')" id="back3" src="image/back.png">
+            <img onclick="show_bowl()" src="image/emptyImage.png" id="empty_3">
+            <img onclick="get_bowl_back()" src="image/dog_bowl.png" id="bowl_water">
+            <img id="water" src="image/water.png" class="not_running">
+            <img onclick="get_water()" id="empty_4" src="image/emptyImage.png">
+            <img onclick="pick('scroll_bird', 'left_box', 'image/left_score.png', 'score_left()')" id="scroll_bird" src="image/scroll.png">
+            <img onclick="show_big('notification', 'second_room')" id="open_door" src="image/door_open.png">
+        </div>
+
+        <div id="box">
+                <div class="boxex"></div>
+                <div class="boxex"></div>
+                <div class="boxex"></div>
+                <div class="boxex"></div>
+                <div class="boxex"></div>
+        </div>
+        
+
+        <div id="detail">
+            <div id="big_board">
+                <img src="image/memo_board_sample.png" id="board_big">
+                <img onclick="hide_big('big_board')" src="image/back.png" id="back_board">
+            </div>
+            <div id="big_clock">
+                <img onclick="clock_run()" src="image/clock.png" id="clock_big">
+                <img onclick="clock_run()" src="image/pin.png" id="pin">
+                <img onclick="hide_big('big_clock')" src="image/back.png" id="back_clock">
+            </div>
+            <div id="big_frame">
+                <img onclick="show_pieces()" src="image/frame.png" id="frame_big">
+                <img src="image/score_scroll.png" id="bottom_big" class="not_shown">
+                <img src="image/left_score.png" id="left_big" class="not_shown">
+                <img src="image/right_score.png" id="right_big" class="not_shown">
+                <img onclick="hide_big('big_frame')" src="image/back.png" id="back_frame">
+            </div>
+            <div id="notification">
+                <img src="image/notification.png" id="note_letter">
+            </div>
+        </div>
+
+        <!-- <div id="scores">
+            <img onclick="hide_score('score_complete')" src="image/score_complete.jpg" id="score_complete">
+            <img onclick="hide_score('bottom')" src="image/score_scroll.png" id="bottom" >
+            <img onclick="hide_score('left')" src="image/left_score.png" id="left">
+            <img onclick="hide_score('right')" src="image/right_score.png" id="right">
+        </div> -->
+    </body>
+</html>
